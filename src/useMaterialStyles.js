@@ -1,4 +1,5 @@
 import { makeStyles } from "@material-ui/core/styles";
+import { Height } from "@material-ui/icons";
 
 export const useStyles = makeStyles((theme) => ({
     table: {
@@ -38,4 +39,16 @@ export const useStyles = makeStyles((theme) => ({
         width: "100%",
         marginBottom: "20px"
     },
+    paperLogin: {
+        width: "500px",
+        height: "300px",
+        padding: "60px",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center"
+    },
+    buttonLogin: {
+        width: "100%",
+        height: "50px"
+    }
 }));

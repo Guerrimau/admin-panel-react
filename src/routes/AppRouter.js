@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 
 import { LoginScreen } from '../components/auth/LoginScreen';
-import { RegisterScreen } from '../components/auth/RegisterScreen';
 
 import { PanelRoutes } from './PanelRoutes';
 
@@ -16,9 +15,8 @@ export const AppRouter = () => {
         <Router>
             <div>
                 <Switch> 
-                    <Route exact path='/login'    component={ LoginScreen }   />
-                    <Route exact path='/register' component={ RegisterScreen }/>
-                    <Route path="/" component={PanelRoutes} />
+                    <Route exact path='/login'    component={ LoginScreen } />
+                    <Route       path="/"         component={ PanelRoutes } />
                     <Redirect to='/login'/>
                 </Switch>
             </div>
