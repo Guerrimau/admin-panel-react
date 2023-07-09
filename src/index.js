@@ -8,7 +8,7 @@ import './index.css';
 import { AppRouter } from './routes/AppRouter';
 
 const client = new ApolloClient({
-  uri: 'https://localhost:7070/api',
+  uri: 'http://localhost:7070/api',
   cache: new InMemoryCache()
 });
 
