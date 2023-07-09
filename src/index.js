@@ -8,7 +8,7 @@ import './index.css';
 import { AppRouter } from './routes/AppRouter';
 
 const client = new ApolloClient({
-  uri: 'https://panel-backend-jaxi.herokuapp.com/api',
+  uri: 'https://localhost:7070/api',
   cache: new InMemoryCache()
 });
 
